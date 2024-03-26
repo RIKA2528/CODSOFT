@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PROJETO MVC</title>
+    <title>Tobler</title>
 
     <!--===========================
-            CSS PLUGINS
+              CSS PLUGINS
     ===============================-->
 
     <!-- Latest compiled and minified CSS -->
@@ -16,6 +16,7 @@
     <!--===========================
              JS PLUGINS
      ===============================-->
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -39,7 +40,7 @@
         <h3 class="text-center py-3">TOBLER</h3>
     </div>
     <!--===========================
-                 BOTTON
+        BOTTON
     ===============================-->
     <div class="container-fluid bg-light">
         <div class="container">
@@ -60,36 +61,26 @@
         </div>
     </div>
     <!--===========================
-        Container
+              Container
     ===============================-->
     <div class="container-fluid">
         <div class="container py-5">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Antonio</td>
-                        <td>Costa</td>
-                        <td>antoniocosta@example.eu</td>
-                    </tr>
-                    <tr>
-                        <td>Maria</td>
-                        <td>Costa</td>
-                        <td>mariacosta@example.eu</td>
-                    </tr>
-                    <tr>
-                        <td>Marcelo</td>
-                        <td>Rebelo</td>
-                        <td>marcelorebelo@example.eu</td>
-                    </tr>
-                </tbody>
-            </table>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Remember me
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
     </div>
 </body>
